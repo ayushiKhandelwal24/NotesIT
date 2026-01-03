@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advancejava.advjavaunit4">
+    <ImageButton
+        android:id="@+id/Advancejava"
+        android:layout_width="67dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/arrow"/>
+    <TextView
+        android:id="@+id/Notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E50D403B"
+        android:padding="6dp"
+        android:text="NOTES"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="italic"/>
+    <TextView
+        android:id="@+id/AIi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="0dp"
+        android:background="#E50D403B"
+        android:padding="6dp"
+        android:text="Advance Java"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="italic"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/AIi"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="18dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="
+Packages in Java
+A Java package is a group of similar types of classes, interfaces and sub-packages.
+
+Why use a package?
+Avoid Naming Conflicts: Packages are used to avoid naming conflicts among class names.
+
+Suppose there is a class called Employee. We know that employees are in the HR as well as the IT department of a company. So, the question is, if we write Employee, then it is of which department? Here, packages come into the picture, and we can write Employee as the fully qualified name for both the department and company.hr.Employee and company.it.Employee. Thus, the naming conflict is avoided.
+
+Organise Classes: For organizing the class, interfaces and other components, packages are used.
+
+Think of a library. There are different shelves for the various kinds of books. Maths books are stored in one place. Science books are stored in another place, etc. Similarly, we can also group similar types of classes in one place. Packages help in doing so. In Java, built-in classes are also organized using packages. Observe the following diagram.
+
+Packages in Java
+Control Access: It is the package that controls the access of the protected and default members. Think what would be the use of default and protected access specifiers if packages were absent?
+Reusability: Java enhances the reusability management of code and does the promotion of data encapsulation with the help of packages.
+Working of Java Packages
+Naming Conventions: Java packages should be in lowercase, and the dot should separate the components (.). If the component is a class, then the first letter of the class name should be capitalized.
+
+To read more Java Naming Conventions
+
+Structure of Directory: The names of the directories and the package names are closely related.
+
+For example, if the package name is company.hr.Employee, then the company is the directory, and inside it, there is another directory called hr, and inside it, there is a class called Employee. Notice that E is in capital, indicating that it is a class name.
+
+Example:
+
+import java.lang.*;
+Here, lang is a subpackage inside the package java.
+
+Accessing Classes
+Importing a Specific Class
+We can access classes of a package using the import keyword. For example, if we want to access a specific class of the java.util package, then use the following statement:
+
+import java.util.ArrayList;
+Here, we are accessing a spec
+
+"
+            android:lineSpacingExtra="5sp"
+            android:padding="6dp"
+            android:textColor="@color/black"/>
+    </ScrollView>
+
+</RelativeLayout>

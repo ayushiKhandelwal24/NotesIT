@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advancejava.advancejava">
+      <ImageButton
+          android:id="@+id/Advancejava"
+          android:layout_width="67dp"
+          android:layout_height="60dp"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginStart="0dp"
+          android:layout_marginTop="0dp"
+          app:srcCompat="@drawable/arrow"/>
+        <TextView
+            android:id="@+id/Notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E50D403B"
+            android:padding="6dp"
+            android:text="NOTES"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="italic"/>
+        <TextView
+            android:id="@+id/AIi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="59dp"
+            android:layout_marginEnd="0dp"
+            android:background="#E50D403B"
+            android:padding="6dp"
+            android:text="Advance Java"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="italic"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/AIi"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="18dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:text="Introduction to Advanced Java
+What is Advanced Java?
+Advanced Java refers to the set of advanced topics and APIs used to build enterprise-level, network-based, and web-based applications. It builds on the foundation of Core Java and focuses more on server-side development.
+
+Difference Between Core Java and Advanced Java
+Feature Core Java  Advanced Java
+Scope   Basic language features    Advanced web and enterprise features
+Application Type    Standalone applications    Web, distributed, and enterprise apps
+Key APIs    OOP, Collections, Threads  JDBC, Servlet, JSP, RMI, Socket
+Examples    Desktop apps, tools    E-commerce, banking systems, portals
+Key Components of Advanced Java
+JDBC (Java Database Connectivity)
+
+API for connecting and executing queries with databases.
+
+Used for CRUD operations.
+
+Works with SQL databases like MySQL, Oracle, PostgreSQL.
+
+Servlets
+
+Java programs that run on a server.
+
+Handle client requests and generate responses.
+
+Lifecycle: init(), service(), destroy().
+
+JSP (JavaServer Pages)
+
+HTML pages with Java code embedded.
+
+Easier than Servlets for building dynamic web pages.
+
+Uses tags and scripting elements.
+
+JavaBeans
+
+Reusable software components.
+
+Follows standard conventions: private properties, getters/setters, no-arg constructor.
+
+RMI (Remote Method Invocation)
+
+Allows Java programs to invoke methods on an object running in another JVM.
+
+Used for distributed applications.
+
+Socket Programming
+
+Enables communication between machines over a network.
+
+Useful for creating chat applications, online games, etc.
+
+Hibernate (Optional but Common)
+
+ORM (Object Relational Mapping) tool for database operations.
+
+Maps Java objects to database tables.
+
+Spring Framework (Optional but Popular)
+
+Framework for enterprise-level Java apps.
+
+Modules: Spring Core, Spring MVC, Spring Boot, etc.
+"
+
+                android:lineSpacingExtra="5sp"
+                android:padding="6dp"
+                android:textColor="@color/black"/>
+        </ScrollView>
+    </RelativeLayout>

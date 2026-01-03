@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NotesIT"
+        tools:targetApi="31">
+        <activity
+            android:name=".advancejava.advjava5"
+            android:exported="false" />
+        <activity
+            android:name=".advancejava.advjavaunit4"
+            android:exported="false" />
+        <activity
+            android:name=".advancejava.advjavaunit3"
+            android:exported="false" />
+        <activity
+            android:name=".advancejava.advjavaunit2"
+            android:exported="false" />
+        <activity
+            android:name=".ai.aiunit5"
+            android:exported="false" />
+        <activity
+            android:name=".ai.aiunit4"
+            android:exported="false" />
+        <activity
+            android:name=".ai.aiunit3"
+            android:exported="false" />
+        <activity
+            android:name=".ai.aiunit2"
+            android:exported="false" />
+        <activity
+            android:name=".java.javaunit5"
+            android:exported="false" />
+        <activity
+            android:name=".java.javaunit4"
+            android:exported="false" />
+        <activity
+            android:name=".java.javaunit3"
+            android:exported="false" />
+        <activity
+            android:name=".java.javaunit2"
+            android:exported="false" />
+        <activity
+            android:name=".pyth.pythonunit5"
+            android:exported="false" />
+        <activity
+            android:name=".pyth.pythonunit4"
+            android:exported="false" />
+        <activity
+            android:name=".pyth.PythonUnit3"
+            android:exported="false" />
+        <activity
+            android:name=".pyth.Unit2"
+            android:exported="false" />
+        <activity
+            android:name=".pyth.pythtopic"
+            android:exported="false" />
+        <activity
+            android:name=".java.javatopic"
+            android:exported="false" />
+        <activity
+            android:name=".ai.aitopic"
+            android:exported="false" />
+        <activity
+            android:name=".advancejava.advancejavatopic"
+            android:exported="false" />
+        <activity
+            android:name=".pyth.python"
+            android:exported="false" />
+        <activity
+            android:name=".java.java"
+            android:exported="false" />
+        <activity
+            android:name=".advancejava.advancejava"
+            android:exported="false" />
+        <activity
+            android:name=".ai.ai"
+            android:exported="false" />
+        <activity
+            android:name=".splash_page"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

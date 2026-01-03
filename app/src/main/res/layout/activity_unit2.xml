@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pyth.Unit2">
+
+    <ImageButton
+        android:id="@+id/pythonn"
+        android:layout_width="67dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#395439"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/arrow"/>
+
+    <TextView
+        android:id="@+id/AIi"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="#F72A7670"
+        android:padding="6dp"
+        android:text="Python"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="italic" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/AIi"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="18dp">
+        <TextView
+            android:id="@+id/python1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Pandas Read CSV
+A simple way to store big data sets is to use CSV files (comma separated files).
+CSV files contains plain text and is a well know format that can be read by everyone including Pandas
+"
+            android:textSize="18dp"
+            android:textAlignment="gravity"
+            android:lineSpacingExtra="5sp"
+            android:padding="6dp"
+            android:textColor="@color/black"/>
+    </ScrollView>
+
+</RelativeLayout>

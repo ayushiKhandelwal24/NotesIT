@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advancejava.advjavaunit2">
+     <ImageButton
+            android:id="@+id/Advancejava"
+            android:layout_width="67dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/arrow"/>
+        <TextView
+            android:id="@+id/Notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E50D403B"
+            android:padding="6dp"
+            android:text="NOTES"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="italic"/>
+        <TextView
+            android:id="@+id/AIi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="59dp"
+            android:layout_marginEnd="0dp"
+            android:background="#E50D403B"
+            android:padding="6dp"
+            android:text="Advance Java"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="italic"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/AIi"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="18dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:text="Servlet in Advanced Java – Theory Overview
+A Servlet is a Java class used to handle requests and responses in a web application. It runs on a server and is part of Java EE (Jakarta EE). Servlets are used to create dynamic web content like processing form data, interacting with databases, or generating responses based on user input.
+
+Key Concepts of Servlets:
+1. Servlet Lifecycle:
+There are 5 main stages:
+
+Loading: Servlet class is loaded by the servlet container.
+
+Instantiation: An object of the servlet class is created.
+
+Initialization (init()): Called once when the servlet is first loaded.
+
+Service (service()): Called for each request; handles HTTP requests.
+
+Destruction (destroy()): Called when the servlet is being removed from memory.
+
+2. Servlet API:
+javax.servlet.Servlet (interface)
+
+javax.servlet.http.HttpServlet (abstract class) Most servlets extend HttpServlet to handle HTTP requests like GET, POST, etc.
+
+3. Important Methods:
+doGet(HttpServletRequest req, HttpServletResponse res)
+
+doPost(HttpServletRequest req, HttpServletResponse res)
+
+init(), destroy(), service()
+
+4. Deployment:
+Servlets are deployed in a web container like Apache Tomcat, and configured using:
+
+web.xml (Deployment Descriptor)
+
+or annotations like @WebServlet"
+
+            android:lineSpacingExtra="5sp"
+            android:padding="6dp"
+            android:textColor="@color/black"/>
+        </ScrollView>
+</RelativeLayout>
